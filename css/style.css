@@ -1,0 +1,20 @@
+h1 {
+    font-size: 30px;
+    /* font-weight: bold; */
+    color: white;
+}
+
+header p {
+    font-style: italic;
+    color: lightgray;
+}
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: darkgray;
+}
+
+header {
+    margin: 25px;
+    text-align: center;
+}
