@@ -1,8 +1,4 @@
-h1 {
-    font-size: 30px;
-    /* font-weight: bold; */
-    color: white;
-}
+
 
 header p {
     font-style: italic;
@@ -10,20 +6,26 @@ header p {
 }
 
 body {
-    font-family: Tahoma, Geneva, sans-serif;
-    background-color: darkgray;
+  font-family: 'Raleway', sans-serif;
+  background-color: #FCF7F7;
+}
+
+.profile {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: 300px;
+  padding: 60px;
+  border-radius: 15px;
+  background: lightslategray;
 }
 
 header {
-    margin: auto;
-    text-align: center;
-    width: 300px;
-    padding: 60px;
-    border-radius: 15px;
-    background: lightslategray;
+  background: #FCF7F7
+              url("https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,w_1920/c_crop,h_500,w_1920/v1469391335/transmission_baur0f.jpg")
+              no-repeat
+              left
+              bottom;
+  height: 300px;
 }
-
-
-body {
-    padding: 100px 0;
-}
+max-height: 75%
