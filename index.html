@@ -6,18 +6,92 @@
     <link rel="stylesheet" href="css/css_reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/d59f446f54.js"></script>
 
 
   </head>
   <body>
     <header>
-      <section>
-        <img  src="https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_500/c_crop,g_west,h_500,w_500/v1469391309/highres_61636152_lcwyfd.jpg"
+      <nav>
+        <a href="https://github.com/emwads">
+          <i class="fa fa-github-square" aria-hidden="true"></i> github
+        </a>
+        <a href="https://www.linkedin.com/in/emilywcheng">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>  linkedin
+        </a>
+      </nav>
+
+      <section class="profile">
+        <img  src="assets/images/profilePic.jpg"
               alt="profile pic" />
-        <p>...a few projects </p>
+        <p>
+          I'm Emily, a software developer in the San Francisco Bay Area that
+          also enjoys running (in small amounts), cooking (in larger amounts),
+          and exploring (in even larger amounts). Check out a few of my projects below :)
+        </p>
       </section>
     </header>
+    <section class="projects">
+
+      <article>
+        <a href="http://runthisplace.xyz/">
+          <img src="assets/images/rtp.png"  />
+        </a>
+        <section>
+          <header>
+            <a href="http://runthisplace.xyz/"><h2>RunThisPlace</h2></a>
+            <a href="https://github.com/emwads/RunThisPlace">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+          </header>
+
+          <p>
+            A full stack rails application with React elements that tracks workouts and
+            routes that users have run.
+          </p>
+        </section>
+      </article>
+
+      <article>
+        <a href="http://emwads.github.io/3d-css-demos">
+          <img src="assets/images/3dcss.png"  />
+        </a>
+        <section>
+          <header>
+            <a href="http://emwads.github.io/3d-css-demos">
+              <h2>CSS collection</h2>
+            </a>
+            <a href="https://github.com/emwads/3d-css-demos">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+          </header>
+
+          <p>
+            A few demos of 3D transforms using HTML, CSS, and JavaScript.
+          </p>
+        </section>
+      </article>
+
+      <article>
+        <a href="http://emwads.github.io/whack-a-troll">
+          <img src="assets/images/wat.png"  />
+        </a>
+        <section>
+          <header>
+            <a href="http://emwads.github.io/whack-a-troll">
+              <h2>Whack-a-Troll</h2>
+            </a>
+            <a href="https://github.com/emwads/whack-a-troll">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+          </header>
+          <p>
+            A two player Canvas + Javascript game for your amusement.
+          </p>
+        </section>
+      </article>
+
+    </section>
   </body>
 </html>
