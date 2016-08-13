@@ -1,0 +1,276 @@
+
+$primary-color: #303841;
+$contrast-color: #EEEEEE;
+$dark-contrast: #7AA5D2;
+$sec-color: #47555E;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ // --------------------------------------
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  padding: 25px 0 10px 0;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: $dark-contrast;
+}
+
+body > section:nth-child(odd){
+  background-color: $contrast-color;
+}
+
+body > section:nth-child(even){
+  background-color: $dark-contrast;
+}
+
+body > header {
+  position: relative;
+  text-align: center;
+  background-color: $contrast-color;
+
+  h1 {
+    font-size: 52px;
+    display: inline-block;
+    letter-spacing: 4px;
+    font-family: 'Just Another Hand', cursive;
+
+  }
+}
+
+body > section {
+  padding: 1%;
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  margin: 3% auto;
+  text-align: left;
+  width: 65%;
+  max-width: 500px;
+  max-height: 200px;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lighten(black, 15%);
+  color: white;
+
+  p {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  img {
+    height: 100px;
+    border-radius:10px;
+    margin: 10px;
+  }
+}
+
+nav {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background-color: $sec-color;
+  color: #BCBDC0;
+  padding: 0 5px;
+  transition: 1s;
+
+  a {
+    padding: 0 5px;
+
+    &:hover  {
+      color: lighten($contrast-color, 25%);
+    }
+
+    &:before {
+      content: "-"
+    }
+
+    &:after {
+      content: "-";
+    }
+  }
+
+
+}
+
+.nav-stuck {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.projects {
+  padding: 1%;
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  article {
+    width: 28%;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% 2%;
+    transition: all;
+    background-color: $contrast-color;
+    overflow: hidden;
+    border: 2px solid $contrast-color;
+    transition: 0.1s;
+
+
+
+    &:hover {
+      // transform: scale(1.025);
+      border: 2px solid $sec-color;
+    }
+
+    section {
+      padding: 1%;
+      box-sizing: border-box;
+    }
+
+    header{
+      justify-content: space-between;
+      margin: 1% auto;
+    }
+
+    aside {
+      padding: 5%;
+
+
+      div {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 0 2% 0;
+        font-size: 18px;
+        color: $sec-color;
+      }
+
+      p {
+        color: $sec-color;
+        text-align: center;
+      }
+    }
+
+
+    img {
+      height: 150px;
+      width: 150px;
+      display: block;
+    }
+
+
+
+  }
+}
+
+
+.skills {
+  div {
+    padding: 2%;
+  }
+
+  span {
+    color: lighten($primary-color, 20%);
+
+    &:after {
+      content: " || ";
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+
+.contact {
+  div {
+    padding: 2%;
+    font-size: 20px;
+  }
+
+  span {
+    padding: 0 10px;
+    color: $primary-color;
+
+
+    &:hover {
+      color: black;
+    }
+  }
+
+
+}
