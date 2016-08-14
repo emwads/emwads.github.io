@@ -48,6 +48,20 @@ table {
 }
  // --------------------------------------
 
+
+@media only screen
+  and (min-device-width: 700px)
+  and (max-device-width: 1000px) {
+   body { font-size: large; }
+ }
+
+@media only screen and (max-device-width: 700px) {
+   body { font-size: xx-large; }
+
+}
+
+
+
 p {
   font-size: 0.9em;
 }
@@ -104,13 +118,37 @@ body > section {
   width: 100%;
 }
 
+
+@media only screen
+and (min-device-width: 1000px) {
+  .profile {
+    width: 65%;
+    max-width: 500px;
+    max-height: 200px;
+  }
+}
+
+@media only screen
+and (min-device-width: 700px)
+and (max-device-width: 1000px) {
+  .profile {
+    width: 75%;
+  }
+}
+
+@media only screen
+and (max-device-width: 700px) {
+  .profile {
+    width: 100%;
+  }
+}
+
+
+
 .profile {
   display: flex;
   margin: 3% auto;
   text-align: left;
-  width: 65%;
-  max-width: 500px;
-  max-height: 200px;
   overflow: hidden;
   padding: 10px;
   border-radius: 10px;
