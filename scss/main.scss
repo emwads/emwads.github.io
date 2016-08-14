@@ -49,7 +49,7 @@ table {
  // --------------------------------------
 
 p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 a {
@@ -58,10 +58,12 @@ a {
 }
 
 h2 {
-  padding: 25px 0 10px 0;
-  text-transform: capitalize;
+  padding: 30px 0 0 0px;
+  text-transform: capitalize;;
+  text-align: center;
   letter-spacing: 5px;
-  font-size: 22px;
+  font-size: 40px;
+  font-family: 'Just Another Hand', cursive;
 }
 
 h3 {
@@ -90,16 +92,15 @@ body > header {
   background-color: $contrast-color;
 
   h1 {
-    font-size: 52px;
+    font-size: 60px;
     display: inline-block;
     letter-spacing: 4px;
     font-family: 'Just Another Hand', cursive;
-
   }
 }
 
 body > section {
-  padding: 1%;
+  padding: 1% 0;
   width: 100%;
 }
 
@@ -134,9 +135,12 @@ nav {
   line-height: 30px;
   display: block;
   background-color: $sec-color;
-  color: #BCBDC0;
+  color: $contrast-color;
   padding: 0 5px;
   transition: 1s;
+  font-size: 18px;
+  letter-spacing: 2px;
+
 
   a {
     padding: 0 5px;
@@ -165,20 +169,42 @@ nav {
 
 
 .projects {
-  padding: 1%;
+  padding: 1% 0;
 
   .project-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media only screen
+  and (min-device-width: 1000px) {
+      article {
+      width: 28%;
+      min-width: 300px;
+    }
+  }
+
+  @media only screen
+  and (min-device-width: 700px)
+  and (max-device-width: 1000px) {
+    article {
+      width: 45%;
+      min-width: 300px;    }
+  }
+
+  @media only screen
+  and (max-device-width: 700px) {
+    article {
+      width: 90%;
+    }
   }
 
   article {
-    width: 28%;
-    min-width: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 2% 2%;
+    margin: 2% 1%;
     transition: all;
     background-color: $contrast-color;
     overflow: hidden;
@@ -193,8 +219,7 @@ nav {
     }
 
     section {
-      padding: 1%;
-      box-sizing: border-box;
+      padding: 1% 0;
     }
 
     header{
@@ -203,14 +228,17 @@ nav {
     }
 
     aside {
-      padding: 5%;
+      padding: 3%;
 
+      a:hover {
+        transform: scale(1.05);
+      }
 
       div {
         display: flex;
         justify-content: space-around;
         padding: 0 0 2% 0;
-        font-size: 18px;
+        font-size: 16px;
         color: $sec-color;
       }
 
@@ -236,6 +264,9 @@ nav {
 .skills {
   div {
     padding: 2%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
   }
 
   span {
@@ -259,7 +290,8 @@ nav {
 .contact {
   div {
     padding: 2%;
-    font-size: 20px;
+    font-size: 24px;
+    text-align: center;
   }
 
   span {

@@ -41,17 +41,19 @@ table {
   border-spacing: 0; }
 
 p {
-  font-size: 16px; }
+  font-size: 14px; }
 
 a {
   text-decoration: none;
   color: inherit; }
 
 h2 {
-  padding: 25px 0 10px 0;
+  padding: 30px 0 0 0px;
   text-transform: capitalize;
+  text-align: center;
   letter-spacing: 5px;
-  font-size: 22px; }
+  font-size: 40px;
+  font-family: 'Just Another Hand', cursive; }
 
 h3 {
   text-transform: uppercase;
@@ -73,13 +75,13 @@ body > header {
   text-align: center;
   background-color: #EEEEEE; }
   body > header h1 {
-    font-size: 52px;
+    font-size: 60px;
     display: inline-block;
     letter-spacing: 4px;
     font-family: 'Just Another Hand', cursive; }
 
 body > section {
-  padding: 1%;
+  padding: 1% 0;
   width: 100%; }
 
 .profile {
@@ -108,9 +110,11 @@ nav {
   line-height: 30px;
   display: block;
   background-color: #47555E;
-  color: #BCBDC0;
+  color: #EEEEEE;
   padding: 0 5px;
-  transition: 1s; }
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 2px; }
   nav a {
     padding: 0 5px; }
     nav a:hover {
@@ -126,17 +130,27 @@ nav {
   width: 100%; }
 
 .projects {
-  padding: 1%; }
+  padding: 1% 0; }
   .projects .project-container {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
+  @media only screen and (min-device-width: 1000px) {
+    .projects article {
+      width: 28%;
+      min-width: 300px; } }
+  @media only screen and (min-device-width: 700px) and (max-device-width: 1000px) {
+    .projects article {
+      width: 45%;
+      min-width: 300px; } }
+  @media only screen and (max-device-width: 700px) {
+    .projects article {
+      width: 90%; } }
   .projects article {
-    width: 28%;
-    min-width: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 2% 2%;
+    margin: 2% 1%;
     transition: all;
     background-color: #EEEEEE;
     overflow: hidden;
@@ -145,18 +159,19 @@ nav {
     .projects article:hover {
       border: 2px solid #47555E; }
     .projects article section {
-      padding: 1%;
-      box-sizing: border-box; }
+      padding: 1% 0; }
     .projects article header {
       justify-content: space-between;
       margin: 1% auto; }
     .projects article aside {
-      padding: 5%; }
+      padding: 3%; }
+      .projects article aside a:hover {
+        transform: scale(1.05); }
       .projects article aside div {
         display: flex;
         justify-content: space-around;
         padding: 0 0 2% 0;
-        font-size: 18px;
+        font-size: 16px;
         color: #47555E; }
       .projects article aside p {
         color: #47555E;
@@ -167,7 +182,10 @@ nav {
       display: block; }
 
 .skills div {
-  padding: 2%; }
+  padding: 2%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 2; }
 .skills span {
   color: #5b6b7c; }
   .skills span:after {
@@ -179,7 +197,8 @@ nav {
 
 .contact div {
   padding: 2%;
-  font-size: 20px; }
+  font-size: 24px;
+  text-align: center; }
 .contact span {
   padding: 0 10px;
   color: #303841; }
