@@ -88,7 +88,8 @@ body > header {
 
 body > section {
   padding: 1% 0;
-  width: 100%; }
+  width: 100%;
+  min-height: 35vh; }
 
 @media only screen and (min-device-width: 1000px) {
   .profile {
@@ -100,7 +101,12 @@ body > section {
     width: 75%; } }
 @media only screen and (max-device-width: 700px) {
   .profile {
-    width: 100%; } }
+    width: 95%; } }
+.me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .profile {
   display: flex;
   margin: 3% auto;
@@ -120,16 +126,16 @@ body > section {
 
 nav {
   text-align: center;
-  height: 30px;
-  line-height: 30px;
+  height: 2em;
+  line-height: 2em;
   display: block;
   background-color: #47555E;
   color: #EEEEEE;
   padding: 0 5px;
   transition: 1s;
-  font-size: 1em;
   letter-spacing: 2px; }
   nav a {
+    font-size: 1.25em;
     padding: 0 5px; }
     nav a:hover {
       color: white; }

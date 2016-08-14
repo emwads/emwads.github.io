@@ -116,6 +116,7 @@ body > header {
 body > section {
   padding: 1% 0;
   width: 100%;
+  min-height: 35vh;
 }
 
 
@@ -139,11 +140,16 @@ and (max-device-width: 1000px) {
 @media only screen
 and (max-device-width: 700px) {
   .profile {
-    width: 100%;
+    width: 95%;
   }
 }
 
 
+.me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .profile {
   display: flex;
@@ -169,18 +175,18 @@ and (max-device-width: 700px) {
 
 nav {
   text-align: center;
-  height: 30px;
-  line-height: 30px;
+  height: 2em;
+  line-height: 2em;
   display: block;
   background-color: $sec-color;
   color: $contrast-color;
   padding: 0 5px;
   transition: 1s;
-  font-size: 1em;
   letter-spacing: 2px;
 
 
   a {
+    font-size: 1.25em;
     padding: 0 5px;
 
     &:hover  {
@@ -326,6 +332,8 @@ nav {
 
 
 .contact {
+
+
   div {
     padding: 2%;
     font-size: 1.5em;
