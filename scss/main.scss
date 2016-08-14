@@ -49,7 +49,7 @@ table {
  // --------------------------------------
 
 p {
-  font-size: 14px;
+  font-size: 0.9em;
 }
 
 a {
@@ -62,13 +62,13 @@ h2 {
   text-transform: capitalize;;
   text-align: center;
   letter-spacing: 5px;
-  font-size: 40px;
+  font-size: 2.5em;
   font-family: 'Just Another Hand', cursive;
 }
 
 h3 {
-  text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.5em;
+  letter-spacing: 2px;
   text-align: center;
 }
 
@@ -92,7 +92,7 @@ body > header {
   background-color: $contrast-color;
 
   h1 {
-    font-size: 60px;
+    font-size: 4em;
     display: inline-block;
     letter-spacing: 4px;
     font-family: 'Just Another Hand', cursive;
@@ -119,7 +119,7 @@ body > section {
 
   p {
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.9em;
   }
 
   img {
@@ -138,7 +138,7 @@ nav {
   color: $contrast-color;
   padding: 0 5px;
   transition: 1s;
-  font-size: 18px;
+  font-size: 1em;
   letter-spacing: 2px;
 
 
@@ -238,7 +238,7 @@ nav {
         display: flex;
         justify-content: space-around;
         padding: 0 0 2% 0;
-        font-size: 16px;
+        font-size: 0.9em;
         color: $sec-color;
       }
 
@@ -265,7 +265,7 @@ nav {
   div {
     padding: 2%;
     text-align: center;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 2;
   }
 
@@ -290,7 +290,7 @@ nav {
 .contact {
   div {
     padding: 2%;
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
   }
 

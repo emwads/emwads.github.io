@@ -41,7 +41,7 @@ table {
   border-spacing: 0; }
 
 p {
-  font-size: 14px; }
+  font-size: 0.9em; }
 
 a {
   text-decoration: none;
@@ -52,12 +52,12 @@ h2 {
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 5px;
-  font-size: 40px;
+  font-size: 2.5em;
   font-family: 'Just Another Hand', cursive; }
 
 h3 {
-  text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.5em;
+  letter-spacing: 2px;
   text-align: center; }
 
 body {
@@ -75,7 +75,7 @@ body > header {
   text-align: center;
   background-color: #EEEEEE; }
   body > header h1 {
-    font-size: 60px;
+    font-size: 4em;
     display: inline-block;
     letter-spacing: 4px;
     font-family: 'Just Another Hand', cursive; }
@@ -98,7 +98,7 @@ body > section {
   color: white; }
   .profile p {
     padding: 10px;
-    font-size: 14px; }
+    font-size: 0.9em; }
   .profile img {
     height: 100px;
     border-radius: 10px;
@@ -113,7 +113,7 @@ nav {
   color: #EEEEEE;
   padding: 0 5px;
   transition: 1s;
-  font-size: 18px;
+  font-size: 1em;
   letter-spacing: 2px; }
   nav a {
     padding: 0 5px; }
@@ -171,7 +171,7 @@ nav {
         display: flex;
         justify-content: space-around;
         padding: 0 0 2% 0;
-        font-size: 16px;
+        font-size: 0.9em;
         color: #47555E; }
       .projects article aside p {
         color: #47555E;
@@ -184,7 +184,7 @@ nav {
 .skills div {
   padding: 2%;
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 2; }
 .skills span {
   color: #5b6b7c; }
@@ -197,7 +197,7 @@ nav {
 
 .contact div {
   padding: 2%;
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center; }
 .contact span {
   padding: 0 10px;
