@@ -182,7 +182,10 @@ nav {
       padding: 1% 0; }
     .projects article header {
       justify-content: space-between;
-      margin: 1% auto; }
+      margin: 1% auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
     .projects article aside {
       padding: 3%; }
       .projects article aside a:hover {
@@ -196,10 +199,22 @@ nav {
       .projects article aside p {
         color: #47555E;
         text-align: center; }
-    .projects article img {
-      height: 150px;
-      width: 150px;
+    .projects article figure {
+      margin: 10px;
+      width: 90%;
       display: block; }
+    .projects article .css-image {
+      content: url("https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,w_475/v1471321943/cssdemo-animated_nlrj6w.png"); }
+    .projects article:hover .css-image {
+      content: url("https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,w_475/v1471321943/cssdemo-animated_nlrj6w.gif"); }
+    .projects article .rtp-image {
+      content: url("https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,q_50,w_475/v1471319804/rtp-animated_a0rc8l.png"); }
+    .projects article:hover .rtp-image {
+      content: url("https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,q_50,w_475/v1471319804/rtp-animated_a0rc8l.gif"); }
+    .projects article .wat-image {
+      content: url("https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,q_50,w_475/v1471319799/wat-animated_u4qd0s.png"); }
+    .projects article:hover .wat-image {
+      content: url("https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,q_50,w_475/v1471319799/wat-animated_u4qd0s.gif"); }
 
 .skills div {
   padding: 2%;
