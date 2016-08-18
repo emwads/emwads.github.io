@@ -303,6 +303,7 @@ nav {
 
     .css-image {
       content: url('https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,w_475/v1471321943/cssdemo-animated_nlrj6w.png');
+      background: url('https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,w_475/v1471321943/cssdemo-animated_nlrj6w.gif') no-repeat -9999px -9999px;
     }
 
     &:hover .css-image {
@@ -311,6 +312,8 @@ nav {
 
     .rtp-image {
       content: url('https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,q_50,w_475/v1471319804/rtp-animated_a0rc8l.png');
+      background: url('https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,q_50,w_475/v1471319804/rtp-animated_a0rc8l.png') no-repeat -9999px -9999px;
+
     }
 
     &:hover .rtp-image {
@@ -318,6 +321,8 @@ nav {
     }
     .wat-image {
       content: url('https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,q_50,w_475/v1471319799/wat-animated_u4qd0s.png');
+      background:  url('https://res.cloudinary.com/dznf6puuv/image/upload/c_scale,h_250,q_50,w_475/v1471319799/wat-animated_u4qd0s.gif')  no-repeat -9999px -9999px;
+
     }
 
     &:hover .wat-image {
@@ -341,11 +346,18 @@ nav {
   span {
     color: lighten($primary-color, 20%);
 
+    &:before {
+      content: "|";
+    }
     &:after {
-      content: " || ";
+      content: "|";
     }
 
     &:last-child:after {
+      content: "";
+    }
+
+    &:first-child:before {
       content: "";
     }
 
